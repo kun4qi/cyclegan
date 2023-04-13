@@ -1,0 +1,43 @@
+{
+    "training": {
+        "seed": 2704, 
+        "n_epochs": 20, 
+        "w_identity": 5.0,
+        "w_cycle": 10.0,
+        "sync_batchnorm": true, 
+        "use_cuda": true, 
+        "visible_devices": "0,1,2,3", 
+        "val_mode": "train"
+    }, 
+    "save": {
+        "study_name": "result_folder", 
+        "output_root_dir": "result/", 
+        "save_epoch_interval": 200, 
+        "save_image_epoch_interval": 5, 
+        "n_saved": 1, 
+        "log_iter_interval": 100, 
+        "n_save_images": 4, 
+        "load_model_dir": "", 
+        "model_savename": "", 
+        "num_seed": 100
+    }, 
+    "dataset": {
+        "mode": "train", 
+        "name": "Dataset", 
+        "root_dir_path": "./data/brats_separated", 
+        "select_slice": "flair", 
+        "use_augmentation": true, 
+        "batch_size": 4, 
+        "num_workers": 16, 
+        "image_size": 256,
+        "input_ch": 1,
+        "output_ch": 1
+    }, 
+    "model": {
+        "saved": false
+    }, 
+    "optimizer": {
+        "gen_lr": 0.0001, 
+        "dis_lr": 0.0001
+    }
+  }
