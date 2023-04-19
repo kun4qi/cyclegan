@@ -1,4 +1,6 @@
 # cyclegan
+## 注意
+vae_introvaeのリポジトリに実行環境について記載あり
 ## データ作成
 1. オリジナルのデータセットから```separate_slice.py```で画像をnpyで保存します。(VAE、introVAEのレポジトリと同じコード)
 
